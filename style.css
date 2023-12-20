@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(124, 92, 140);
+}
+.card{
+    background: #fff;
+    align-items: center;
+    text-align: start;
+    
+    max-width: 540px;
+    width: 100%;
+    margin: 100px auto 20px ;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+   
+}
+.content h1{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.content img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.form{
+    display: flex;
+    background: #edeef0;
+
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+input {
+    flex: 1;
+    outline: none;
+    border: none;
+    font-weight: 14px;
+    padding: 5px;
+    background: transparent;
+}
+button{
+    border-radius: 30px;
+    padding: 16px 50px;
+    background: #f04937de;
+    border: none;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+button:hover{
+    background: #df301dde;
+}
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 17px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(photos/circle.svg);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(photos/check.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
+#list-item{
+    display: block;
+   
+}
